@@ -1,6 +1,6 @@
 {
   "name": "@anio-node-foundation/fs-read-file-in-chunks",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Read a file in chunks asynchronously or synchronously.",
   "main": "./build/package.mjs",
   "author": "Anio Software <info@anio.software>",
