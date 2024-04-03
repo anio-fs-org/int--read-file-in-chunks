@@ -1,9 +1,9 @@
-# @anio-node-foundation/fs-read-file-in-chunks
+# @anio-fs/int--read-file-in-chunks
 
 Read a file in chunks asynchronously or synchronously.
 
 ```js
-import {readFileInChunks} from "@anio-node-foundation/fs-read-file-in-chunks"
+import {readFileInChunks} from "@anio-fs/int--read-file-in-chunks"
 import {createHash} from "node:crypto"
 
 const file = await readFileInChunks("./src/index.mjs", 18)
