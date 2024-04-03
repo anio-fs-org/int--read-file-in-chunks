@@ -1,5 +1,11 @@
 declare type AsyncReadFileInChunksObject = {
+	/**
+	 * @brief Asynchronously reads the next chunk.
+	 */
 	readNextChunk() : Promise<Buffer>;
+	/**
+	 * @brief Asynchronously closes the file.
+	 */
 	close() : Promise<void>;
 };
 
@@ -13,7 +19,13 @@ declare type AsyncReadFileInChunksObject = {
 export function readFileInChunks(path : string, chunk_size : number) : Promise<AsyncReadFileInChunksObject>
 
 declare type SyncReadFileInChunksObject = {
+	/**
+	 * @brief Synchronously reads the next chunk.
+	 */
 	readNextChunk() : Buffer;
+	/**
+	 * @brief Synchronously closes the file.
+	 */
 	close() : void;
 };
 
