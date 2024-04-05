@@ -1,5 +1,7 @@
-export default function(fs_object, file_path, chunk_size) {
-	const file = fs_object.openFile(file_path, "r")
+import {openFile} from "@anio-fs/api/sync"
+
+export default function(file_path, chunk_size) {
+	const file = openFile(file_path, "r")
 	let closed = false
 
 	return {

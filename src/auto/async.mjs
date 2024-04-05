@@ -1,5 +1,7 @@
-export default async function(fs_object, file_path, chunk_size) {
-	const file = await fs_object.openFile(file_path, "r")
+import {openFile} from "@anio-fs/api/async"
+
+export default async function(file_path, chunk_size) {
+	const file = await openFile(file_path, "r")
 	let closed = false
 
 	return {

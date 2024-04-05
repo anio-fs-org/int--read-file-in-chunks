@@ -1,8 +1,9 @@
 import {generateFromTemplate} from "vipen/autogenerate"
 
 const asyncToSync = {
+	"import {openFile} from \"@anio-fs/api/async\"": "import {openFile} from \"@anio-fs/api/sync\"",
 	"export default async function": "export default function",
-	"await fs_object.openFile(": "fs_object.openFile(",
+	"await openFile(": "openFile(",
 	"await file.read(": "file.read(",
 	"await file.close()": "file.close()",
 	"async readNextChunk() {": "readNextChunk() {",
