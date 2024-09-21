@@ -1,4 +1,4 @@
-import {generateFromTemplate} from "vipen/autogenerate"
+import {generateFromTemplate} from "fourtune/autogenerate"
 
 const asyncToSync = {
 	"import {openFile} from \"@anio-fs/api/async\"": "import {openFile} from \"@anio-fs/api/sync\"",
