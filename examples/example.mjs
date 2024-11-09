@@ -1,7 +1,7 @@
-import {readFileInChunks} from "../src/index.mjs"
+import {readFileInChunks} from "../dist/default/index.mjs"
 import {createHash} from "node:crypto"
 
-const file = await readFileInChunks("./src/index.mjs", 18)
+const file = await readFileInChunks("./dist/default/index.mjs", 18)
 const hash = createHash("sha256")
 
 while (true) {
