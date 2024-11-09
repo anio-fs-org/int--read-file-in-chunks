@@ -34,6 +34,10 @@ export default async function(
 			const bytes_read = await file.read(chunk_buffer)
 //			const bytes_read = file.read(chunk_buffer)
 
+			context.log.trace(
+				`read ${bytes_read} bytes from file ${file_path}`
+			)
+
 			if (!bytes_read) {
 				if (!closed) await file.close()
 //				if (!closed) file.close()
