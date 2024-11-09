@@ -1,6 +1,6 @@
 {
   "name": "@anio-fs/int--read-file-in-chunks",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Read a file in chunks asynchronously or synchronously.",
   "main": "./dist/package.min.mjs",
   "typings": "./dist/index.d.ts",
